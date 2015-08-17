@@ -1,0 +1,15 @@
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: AppBundle\Entity\User
+    service:
+        user_manager: pugx_user_manager
+
+pugx_multi_user:
+  users:
+    user_one:
+        entity:
+          class: AppBundle\Entity\UserOne
+    user_two:
+        entity:
+          class: AppBundle\Entity\UserTwo
